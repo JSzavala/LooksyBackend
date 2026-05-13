@@ -13,11 +13,7 @@ app.use(usuarioRuta)
 app.use(preferenciaRuta)
 
 app.get('/', (req, res) => {
-  res.send('Pipirupirupipirupi')
-})
-
-app.get('/atuendo/:idAtuendo', (req, res) => {
-  res.send(`Este es el atuendo ${req.params.idAtuendo}`)
+  res.send('Servidor respondió correctamente')
 })
 
 app.listen(port, () => {
