@@ -1,0 +1,114 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Usuario {
+  idUsuario  Int       @id @default(autoincrement())
+  nombre     String    @db.VarChar(100)
+  correo     String    @unique @db.VarChar(100)
+  contrasena String    @db.VarChar(255)
+  rol        UsuarioRol @default(cliente)
+
+  Cliente  Cliente?
+  Tiendas  Tienda[]
+}
+
+enum UsuarioRol {
+  cliente
+  tienda
+}
+
+model Cliente {
+  idCliente     Int      @id @default(autoincrement())
+  preferencia   String?  @db.VarChar(100)
+  listaDeDeseos String?  @db.Text
+  idUsuario     Int      @unique
+  usuario       Usuario  @relation(fields: [idUsuario], references: [idUsuario])
+
+  Compras     Compra[]
+  Ventas      Venta[]
+}
+
+model Compra {
+  idCompra        Int      @id @default(autoincrement())
+  fecha           DateTime
+  total           Decimal  @db.Decimal(10, 2)
+  estado          String   @db.VarChar(50)
+  tiempoEntrega   Int?
+  cantidadArticulos Int
+  idCliente       Int
+  cliente         Cliente  @relation(fields: [idCliente], references: [idCliente], onDelete: Cascade)
+
+  Pago Pago?
+}
+
+model Tienda {
+  idTienda       Int      @id @default(autoincrement())
+  nombreTienda   String   @db.VarChar(100)
+  direccion      String   @db.VarChar(255)
+  contacto       String   @db.VarChar(100)
+  idAdministrador Int
+  administrador  Usuario  @relation(fields: [idAdministrador], references: [idUsuario])
+
+  Ventas   Venta[]
+  Productos Producto[]
+}
+
+model Venta {
+  idVenta   Int      @id @default(autoincrement())
+  estado    String   @db.VarChar(50)
+  fecha     DateTime
+  idTienda  Int
+  idCliente Int
+  tienda    Tienda   @relation(fields: [idTienda], references: [idTienda], onDelete: Cascade)
+  cliente   Cliente  @relation(fields: [idCliente], references: [idCliente], onDelete: Cascade)
+
+  detalles DetalleVenta[]
+}
+
+model Articulo {
+  idArticulo  Int      @id @default(autoincrement())
+  nombre      String   @db.VarChar(100)
+  precio      Decimal  @db.Decimal(10, 2)
+  stock       Int
+  descripcion String?  @db.Text
+
+  detalles DetalleVenta[]
+}
+
+model DetalleVenta {
+  idVenta    Int
+  idArticulo Int
+  cantidad   Int
+  total      Decimal @db.Decimal(10, 2)
+  venta      Venta   @relation(fields: [idVenta], references: [idVenta], onDelete: Cascade)
+  articulo   Articulo @relation(fields: [idArticulo], references: [idArticulo], onDelete: Cascade)
+
+  @@id([idVenta, idArticulo])
+}
+
+model Pago {
+  idPago          Int      @id @default(autoincrement())
+  metodo          String   @db.VarChar(50)
+  estado          String   @db.VarChar(50)
+  fechaAutorizacion DateTime
+  idCompra        Int      @unique
+  compra          Compra   @relation(fields: [idCompra], references: [idCompra], onDelete: Cascade)
+}
+
+model Producto {
+  idProducto  Int      @id @default(autoincrement())
+  nombre      String   @db.VarChar(100)
+  descripcion String?  @db.Text
+  precio      Decimal  @db.Decimal(10, 2)
+  stock       Int      @default(0)
+  disponible  Boolean  @default(true)
+  idTienda    Int
+  tienda      Tienda   @relation(fields: [idTienda], references: [idTienda], onDelete: Cascade)
+
+  @@index([idTienda])
+}
