@@ -4,7 +4,7 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 -- drop database VentasDB;
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema mydbx
 -- -----------------------------------------------------
 -- -----------------------------------------------------
 -- Schema VentasDB
@@ -170,6 +170,62 @@ CREATE TABLE IF NOT EXISTS `VentasDB`.`Pago` (
   CONSTRAINT `Pago_ibfk_1`
     FOREIGN KEY (`idCompra`)
     REFERENCES `VentasDB`.`Compra` (`idCompra`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `VentasDB`.`Producto`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `VentasDB`.`Producto` (
+  `idProducto` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(100) NOT NULL,
+  `descripcion` TEXT NULL DEFAULT NULL,
+  `precio` DECIMAL(10,2) NOT NULL,
+  `stock` INT NOT NULL DEFAULT 0,
+  `disponible` TINYINT(1) NOT NULL DEFAULT 1,
+  `idTienda` INT NOT NULL,
+  PRIMARY KEY (`idProducto`),
+  INDEX `idTienda` (`idTienda` ASC) VISIBLE,
+  CONSTRAINT `Producto_ibfk_1`
+    FOREIGN KEY (`idTienda`)
+    REFERENCES `VentasDB`.`Tienda` (`idTienda`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `VentasDB`.`Etiqueta`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `VentasDB`.`Etiqueta` (
+  `idEtiqueta` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`idEtiqueta`),
+  UNIQUE INDEX `nombre` (`nombre` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `VentasDB`.`ProductoEtiqueta`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `VentasDB`.`ProductoEtiqueta` (
+  `idProducto` INT NOT NULL,
+  `idEtiqueta` INT NOT NULL,
+  PRIMARY KEY (`idProducto`, `idEtiqueta`),
+  INDEX `idEtiqueta` (`idEtiqueta` ASC) VISIBLE,
+  CONSTRAINT `ProductoEtiqueta_ibfk_1`
+    FOREIGN KEY (`idProducto`)
+    REFERENCES `VentasDB`.`Producto` (`idProducto`)
+    ON DELETE CASCADE,
+  CONSTRAINT `ProductoEtiqueta_ibfk_2`
+    FOREIGN KEY (`idEtiqueta`)
+    REFERENCES `VentasDB`.`Etiqueta` (`idEtiqueta`)
     ON DELETE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4

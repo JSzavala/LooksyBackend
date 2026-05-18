@@ -149,4 +149,106 @@ router.get('/api/tiendas/:idTienda/productos', async (req, res) => {
   }
 })
 
+router.put('/api/productos/:idProducto', async (req, res) => {
+  try {
+    const { idProducto } = req.params
+    const { nombre, descripcion, precio, stock, disponible, idTienda, etiquetas } = req.body
+
+    const producto = await prisma.producto.findUnique({
+      where: { idProducto: Number(idProducto) },
+    })
+
+    if (!producto) {
+      return res.status(404).json({
+        error: 'Producto no encontrado',
+        mensaje: `No existe un producto con el id ${idProducto}`,
+      })
+    }
+
+    if (idTienda) {
+      const tienda = await prisma.tienda.findUnique({
+        where: { idTienda: Number(idTienda) },
+      })
+      if (!tienda) {
+        return res.status(404).json({
+          error: 'Tienda no encontrada',
+          mensaje: `No existe una tienda con el id ${idTienda}`,
+        })
+      }
+    }
+
+    const productoActualizado = await prisma.producto.update({
+      where: { idProducto: Number(idProducto) },
+      data: {
+        ...(nombre !== undefined && { nombre }),
+        ...(descripcion !== undefined && { descripcion }),
+        ...(precio !== undefined && { precio }),
+        ...(stock !== undefined && { stock }),
+        ...(disponible !== undefined && { disponible }),
+        ...(idTienda !== undefined && { idTienda: Number(idTienda) }),
+        ...(etiquetas !== undefined && {
+          etiquetas: {
+            deleteMany: {},
+            create: etiquetas.map(id => ({ idEtiqueta: Number(id) })),
+          },
+        }),
+      },
+      select: {
+        idProducto: true,
+        nombre: true,
+        descripcion: true,
+        precio: true,
+        stock: true,
+        disponible: true,
+        idTienda: true,
+        etiquetas: {
+          select: {
+            etiqueta: { select: { idEtiqueta: true, nombre: true } },
+          },
+        },
+      },
+    })
+
+    res.json({ producto: productoActualizado })
+  } catch (error) {
+    console.error('Error al actualizar producto:', error)
+    res.status(500).json({
+      error: 'Error interno del servidor',
+      mensaje: 'No se pudo actualizar el producto',
+    })
+  }
+})
+
+router.delete('/api/productos/:idProducto', async (req, res) => {
+  try {
+    const { idProducto } = req.params
+
+    const producto = await prisma.producto.findUnique({
+      where: { idProducto: Number(idProducto) },
+    })
+
+    if (!producto) {
+      return res.status(404).json({
+        error: 'Producto no encontrado',
+        mensaje: `No existe un producto con el id ${idProducto}`,
+      })
+    }
+
+    await prisma.producto.delete({
+      where: { idProducto: Number(idProducto) },
+    })
+
+    res.json({
+      mensaje: 'Producto eliminado correctamente',
+      idProducto: Number(idProducto),
+    })
+  } catch (error) {
+    console.error('Error al eliminar producto:', error)
+    res.status(500).json({
+      error: 'Error interno del servidor',
+      mensaje: 'No se pudo eliminar el producto',
+    })
+  }
+})
+
 module.exports = router

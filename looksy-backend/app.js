@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
   res.send('Servidor respondió correctamente')
 })
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Andamos en el port ${port}`)
 })
 
