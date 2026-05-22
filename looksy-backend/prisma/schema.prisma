@@ -50,6 +50,7 @@ model Compra {
 model Tienda {
   idTienda       Int      @id @default(autoincrement())
   nombreTienda   String   @db.VarChar(100)
+  descripcion    String?  @db.Text
   direccion      String   @db.VarChar(255)
   contacto       String   @db.VarChar(100)
   idAdministrador Int

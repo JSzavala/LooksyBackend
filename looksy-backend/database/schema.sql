@@ -95,6 +95,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 CREATE TABLE IF NOT EXISTS `VentasDB`.`Tienda` (
   `idTienda` INT NOT NULL AUTO_INCREMENT,
   `nombreTienda` VARCHAR(100) NOT NULL,
+  `descripcion` TEXT NULL DEFAULT NULL,
   `direccion` VARCHAR(255) NOT NULL,
   `contacto` VARCHAR(100) NOT NULL,
   `idAdministrador` INT NOT NULL,

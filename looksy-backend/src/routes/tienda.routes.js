@@ -75,4 +75,78 @@ router.post('/api/tiendas', async (req, res) => {
   }
 })
 
+router.get('/api/tiendas/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+
+    const tienda = await prisma.tienda.findUnique({
+      where: { idTienda: Number(id) },
+      select: {
+        idTienda: true,
+        nombreTienda: true,
+        direccion: true,
+        contacto: true,
+        idAdministrador: true,
+      },
+    })
+
+    if (!tienda) {
+      return res.status(404).json({
+        error: 'Tienda no encontrada',
+        mensaje: `No existe una tienda con el id ${id}`,
+      })
+    }
+
+    res.json({ tienda })
+  } catch (error) {
+    console.error('Error al obtener tienda:', error)
+    res.status(500).json({
+      error: 'Error interno del servidor',
+      mensaje: 'No se pudo obtener la tienda',
+    })
+  }
+})
+
+router.put('/api/tiendas/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const { nombreTienda, direccion, contacto } = req.body
+
+    const tiendaExistente = await prisma.tienda.findUnique({
+      where: { idTienda: Number(id) },
+      select: { idTienda: true },
+    })
+    if (!tiendaExistente) {
+      return res.status(404).json({
+        error: 'Tienda no encontrada',
+        mensaje: `No existe una tienda con el id ${id}`,
+      })
+    }
+
+    const tienda = await prisma.tienda.update({
+      where: { idTienda: Number(id) },
+      data: {
+        ...(nombreTienda !== undefined && { nombreTienda }),
+        ...(direccion !== undefined && { direccion }),
+        ...(contacto !== undefined && { contacto }),
+      },
+      select: {
+        idTienda: true,
+        nombreTienda: true,
+        direccion: true,
+        contacto: true,
+        idAdministrador: true,
+      },
+    })
+
+    res.json({ tienda })
+  } catch (error) {
+    console.error('Error al actualizar tienda:', error)
+    res.status(500).json({
+      error: 'Error interno del servidor',
+      mensaje: 'No se pudo actualizar la tienda',
+    })
+  }
+})
+
 module.exports = router
