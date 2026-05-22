@@ -1,365 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779411597557" clover="3.2.0">
-  <project timestamp="1779411597557" name="All files">
-    <metrics statements="327" coveredstatements="218" conditionals="141" coveredconditionals="83" methods="30" coveredmethods="20" elements="498" coveredelements="321" complexity="0" loc="327" ncloc="327" packages="2" files="9" classes="9"/>
+<coverage generated="1779421347966" clover="3.2.0">
+  <project timestamp="1779421347966" name="All files">
+    <metrics statements="327" coveredstatements="327" conditionals="141" coveredconditionals="141" methods="30" coveredmethods="30" elements="498" coveredelements="498" complexity="0" loc="327" ncloc="327" packages="2" files="9" classes="9"/>
     <package name="looksy-backend">
       <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="app.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/app.js">
         <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="17" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="33" count="5" type="stmt"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
     </package>
     <package name="looksy-backend.src.routes">
-      <metrics statements="302" coveredstatements="193" conditionals="141" coveredconditionals="83" methods="28" coveredmethods="18"/>
+      <metrics statements="302" coveredstatements="302" conditionals="141" coveredconditionals="141" methods="28" coveredmethods="28"/>
       <file name="atuendo.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/atuendo.routes.js">
-        <metrics statements="22" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="36" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="36" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
         <line num="46" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="47" count="1" type="stmt"/>
         <line num="53" count="2" type="stmt"/>
         <line num="70" count="2" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="80" count="5" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
       </file>
       <file name="auth.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/auth.routes.js">
-        <metrics statements="38" coveredstatements="36" conditionals="19" coveredconditionals="19" methods="2" coveredmethods="2"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="2" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="6" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
-        <line num="11" count="22" type="stmt"/>
-        <line num="12" count="22" type="stmt"/>
-        <line num="14" count="22" type="cond" truecount="5" falsecount="0"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="21" count="18" type="stmt"/>
-        <line num="22" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="29" count="14" type="stmt"/>
-        <line num="30" count="14" type="stmt"/>
-        <line num="32" count="14" type="stmt"/>
-        <line num="47" count="14" type="stmt"/>
-        <line num="53" count="14" type="stmt"/>
-        <line num="55" count="2" type="stmt"/>
-        <line num="56" count="2" type="stmt"/>
-        <line num="63" count="6" type="stmt"/>
-        <line num="64" count="10" type="stmt"/>
-        <line num="65" count="10" type="stmt"/>
-        <line num="67" count="10" type="cond" truecount="4" falsecount="0"/>
+        <metrics statements="38" coveredstatements="38" conditionals="19" coveredconditionals="19" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="14" count="6" type="cond" truecount="5" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="65" count="7" type="stmt"/>
+        <line num="67" count="7" type="cond" truecount="4" falsecount="0"/>
         <line num="68" count="1" type="stmt"/>
-        <line num="74" count="9" type="stmt"/>
-        <line num="85" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="74" count="6" type="stmt"/>
+        <line num="85" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="86" count="2" type="stmt"/>
-        <line num="92" count="7" type="stmt"/>
-        <line num="93" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="94" count="2" type="stmt"/>
-        <line num="100" count="5" type="stmt"/>
-        <line num="106" count="5" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="117" count="0" type="stmt"/>
-        <line num="124" count="6" type="stmt"/>
+        <line num="92" count="3" type="stmt"/>
+        <line num="93" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="100" count="2" type="stmt"/>
+        <line num="106" count="2" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="124" count="2" type="stmt"/>
       </file>
       <file name="etiqueta.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/etiqueta.routes.js">
-        <metrics statements="22" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="29" count="10" type="stmt"/>
-        <line num="30" count="10" type="stmt"/>
-        <line num="32" count="10" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="33" count="2" type="stmt"/>
-        <line num="39" count="8" type="stmt"/>
-        <line num="40" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="52" count="6" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="62" count="5" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
       </file>
       <file name="pedido.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/pedido.routes.js">
-        <metrics statements="26" coveredstatements="22" conditionals="16" coveredconditionals="14" methods="3" coveredmethods="3"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+        <metrics statements="26" coveredstatements="26" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
         <line num="35" count="3" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="49" count="6" type="cond" truecount="6" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="9" type="stmt"/>
+        <line num="47" count="9" type="stmt"/>
+        <line num="49" count="9" type="cond" truecount="6" falsecount="0"/>
         <line num="50" count="3" type="stmt"/>
-        <line num="56" count="3" type="stmt"/>
-        <line num="59" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="59" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="60" count="1" type="stmt"/>
-        <line num="66" count="2" type="stmt"/>
-        <line num="69" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="4" type="stmt"/>
+        <line num="69" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="70" count="1" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="83" count="1" type="stmt"/>
-        <line num="106" count="1" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-        <line num="116" count="5" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="83" count="3" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="116" count="2" type="stmt"/>
       </file>
       <file name="preference.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/preference.routes.js">
-        <metrics statements="19" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="20" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="80" count="5" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
       </file>
       <file name="product.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/product.routes.js">
-        <metrics statements="59" coveredstatements="32" conditionals="39" coveredconditionals="14" methods="7" coveredmethods="3"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="2" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="6" count="24" type="stmt"/>
-        <line num="7" count="24" type="stmt"/>
-        <line num="31" count="22" type="stmt"/>
+        <metrics statements="59" coveredstatements="59" conditionals="39" coveredconditionals="39" methods="7" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="41" count="6" type="stmt"/>
-        <line num="42" count="13" type="stmt"/>
-        <line num="43" count="13" type="stmt"/>
-        <line num="45" count="13" type="cond" truecount="5" falsecount="0"/>
-        <line num="46" count="4" type="stmt"/>
-        <line num="52" count="9" type="stmt"/>
-        <line num="55" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="8" type="stmt"/>
+        <line num="43" count="8" type="stmt"/>
+        <line num="45" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="55" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="56" count="1" type="stmt"/>
-        <line num="62" count="7" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="94" count="7" type="stmt"/>
+        <line num="62" count="5" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="94" count="4" type="stmt"/>
         <line num="96" count="1" type="stmt"/>
         <line num="97" count="1" type="stmt"/>
-        <line num="104" count="6" type="stmt"/>
-        <line num="105" count="5" type="stmt"/>
-        <line num="106" count="5" type="stmt"/>
-        <line num="108" count="5" type="stmt"/>
-        <line num="112" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="113" count="3" type="stmt"/>
-        <line num="119" count="2" type="stmt"/>
-        <line num="135" count="2" type="stmt"/>
-        <line num="144" count="0" type="stmt"/>
-        <line num="145" count="0" type="stmt"/>
-        <line num="152" count="6" type="stmt"/>
-        <line num="153" count="0" type="stmt"/>
-        <line num="154" count="0" type="stmt"/>
-        <line num="155" count="0" type="stmt"/>
-        <line num="157" count="0" type="stmt"/>
-        <line num="161" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="162" count="0" type="stmt"/>
-        <line num="168" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="169" count="0" type="stmt"/>
-        <line num="172" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="173" count="0" type="stmt"/>
-        <line num="180" count="0" type="stmt"/>
-        <line num="192" count="0" type="stmt"/>
-        <line num="212" count="0" type="stmt"/>
-        <line num="214" count="0" type="stmt"/>
-        <line num="215" count="0" type="stmt"/>
-        <line num="222" count="6" type="stmt"/>
-        <line num="223" count="0" type="stmt"/>
-        <line num="224" count="0" type="stmt"/>
-        <line num="226" count="0" type="stmt"/>
-        <line num="230" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="231" count="0" type="stmt"/>
-        <line num="237" count="0" type="stmt"/>
-        <line num="241" count="0" type="stmt"/>
-        <line num="246" count="0" type="stmt"/>
-        <line num="247" count="0" type="stmt"/>
-        <line num="254" count="6" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="105" count="3" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
+        <line num="108" count="3" type="stmt"/>
+        <line num="112" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="119" count="1" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="152" count="2" type="stmt"/>
+        <line num="153" count="8" type="stmt"/>
+        <line num="154" count="8" type="stmt"/>
+        <line num="155" count="8" type="stmt"/>
+        <line num="157" count="8" type="stmt"/>
+        <line num="161" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="162" count="2" type="stmt"/>
+        <line num="168" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="169" count="2" type="stmt"/>
+        <line num="172" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="173" count="1" type="stmt"/>
+        <line num="180" count="4" type="stmt"/>
+        <line num="192" count="1" type="stmt"/>
+        <line num="212" count="4" type="stmt"/>
+        <line num="214" count="1" type="stmt"/>
+        <line num="215" count="1" type="stmt"/>
+        <line num="222" count="2" type="stmt"/>
+        <line num="223" count="5" type="stmt"/>
+        <line num="224" count="5" type="stmt"/>
+        <line num="226" count="5" type="stmt"/>
+        <line num="230" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="231" count="2" type="stmt"/>
+        <line num="237" count="2" type="stmt"/>
+        <line num="241" count="2" type="stmt"/>
+        <line num="246" count="1" type="stmt"/>
+        <line num="247" count="1" type="stmt"/>
+        <line num="254" count="2" type="stmt"/>
       </file>
       <file name="tienda.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/tienda.routes.js">
-        <metrics statements="42" coveredstatements="20" conditionals="18" coveredconditionals="8" methods="4" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="13" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="21" count="13" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="35" count="5" type="cond" truecount="6" falsecount="0"/>
-        <line num="36" count="1" type="stmt"/>
+        <metrics statements="42" coveredstatements="42" conditionals="18" coveredconditionals="18" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="6" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
         <line num="42" count="4" type="stmt"/>
-        <line num="45" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="46" count="1" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
-        <line num="68" count="3" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="78" count="5" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="82" count="0" type="stmt"/>
-        <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="100" count="0" type="stmt"/>
-        <line num="102" count="0" type="stmt"/>
-        <line num="103" count="0" type="stmt"/>
-        <line num="110" count="5" type="stmt"/>
-        <line num="111" count="0" type="stmt"/>
-        <line num="112" count="0" type="stmt"/>
-        <line num="113" count="0" type="stmt"/>
-        <line num="115" count="0" type="stmt"/>
-        <line num="119" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="120" count="0" type="stmt"/>
-        <line num="126" count="0" type="stmt"/>
-        <line num="142" count="0" type="stmt"/>
-        <line num="144" count="0" type="stmt"/>
-        <line num="145" count="0" type="stmt"/>
-        <line num="152" count="5" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="79" count="5" type="stmt"/>
+        <line num="80" count="5" type="stmt"/>
+        <line num="82" count="5" type="stmt"/>
+        <line num="93" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="94" count="2" type="stmt"/>
+        <line num="100" count="2" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="110" count="2" type="stmt"/>
+        <line num="111" count="6" type="stmt"/>
+        <line num="112" count="6" type="stmt"/>
+        <line num="113" count="6" type="stmt"/>
+        <line num="115" count="6" type="stmt"/>
+        <line num="119" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="120" count="2" type="stmt"/>
+        <line num="126" count="3" type="stmt"/>
+        <line num="142" count="3" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="152" count="2" type="stmt"/>
       </file>
       <file name="user.routes.js" path="/home/samuel/Documentos/LooksyBackend/looksy-backend/src/routes/user.routes.js">
-        <metrics statements="74" coveredstatements="35" conditionals="35" coveredconditionals="15" methods="5" coveredmethods="3"/>
-        <line num="1" count="6" type="stmt"/>
-        <line num="2" count="6" type="stmt"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="7" count="15" type="stmt"/>
-        <line num="8" count="15" type="stmt"/>
-        <line num="10" count="15" type="cond" truecount="4" falsecount="0"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="32" count="9" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="45" count="6" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="6" type="stmt"/>
-        <line num="49" count="6" type="cond" truecount="5" falsecount="0"/>
+        <metrics statements="74" coveredstatements="74" conditionals="35" coveredconditionals="35" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="49" count="4" type="cond" truecount="5" falsecount="0"/>
         <line num="50" count="1" type="stmt"/>
-        <line num="56" count="5" type="stmt"/>
-        <line num="57" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="57" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="58" count="1" type="stmt"/>
-        <line num="64" count="4" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
-        <line num="67" count="4" type="stmt"/>
-        <line num="82" count="4" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="92" count="6" type="stmt"/>
-        <line num="93" count="6" type="stmt"/>
-        <line num="94" count="6" type="stmt"/>
-        <line num="96" count="6" type="stmt"/>
-        <line num="106" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="107" count="4" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="93" count="5" type="stmt"/>
+        <line num="94" count="5" type="stmt"/>
+        <line num="96" count="5" type="stmt"/>
+        <line num="106" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="107" count="2" type="stmt"/>
         <line num="113" count="2" type="stmt"/>
-        <line num="115" count="0" type="stmt"/>
-        <line num="116" count="0" type="stmt"/>
-        <line num="123" count="6" type="stmt"/>
-        <line num="124" count="0" type="stmt"/>
-        <line num="125" count="0" type="stmt"/>
-        <line num="126" count="0" type="stmt"/>
-        <line num="128" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="129" count="0" type="stmt"/>
-        <line num="135" count="0" type="stmt"/>
-        <line num="138" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="139" count="0" type="stmt"/>
-        <line num="145" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="146" count="0" type="stmt"/>
-        <line num="147" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="148" count="0" type="stmt"/>
-        <line num="155" count="0" type="stmt"/>
-        <line num="161" count="0" type="stmt"/>
-        <line num="163" count="0" type="stmt"/>
-        <line num="164" count="0" type="stmt"/>
-        <line num="171" count="6" type="stmt"/>
-        <line num="172" count="0" type="stmt"/>
-        <line num="173" count="0" type="stmt"/>
-        <line num="174" count="0" type="stmt"/>
-        <line num="176" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="177" count="0" type="stmt"/>
-        <line num="183" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="184" count="0" type="stmt"/>
-        <line num="190" count="0" type="stmt"/>
-        <line num="194" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="195" count="0" type="stmt"/>
-        <line num="201" count="0" type="stmt"/>
-        <line num="202" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="203" count="0" type="stmt"/>
-        <line num="209" count="0" type="stmt"/>
-        <line num="210" count="0" type="stmt"/>
-        <line num="212" count="0" type="stmt"/>
-        <line num="217" count="0" type="stmt"/>
-        <line num="219" count="0" type="stmt"/>
-        <line num="220" count="0" type="stmt"/>
-        <line num="227" count="6" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="124" count="8" type="stmt"/>
+        <line num="125" count="8" type="stmt"/>
+        <line num="126" count="8" type="stmt"/>
+        <line num="128" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="135" count="7" type="stmt"/>
+        <line num="138" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="139" count="2" type="stmt"/>
+        <line num="145" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="146" count="2" type="stmt"/>
+        <line num="147" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="148" count="1" type="stmt"/>
+        <line num="155" count="3" type="stmt"/>
+        <line num="161" count="3" type="stmt"/>
+        <line num="163" count="1" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+        <line num="171" count="2" type="stmt"/>
+        <line num="172" count="8" type="stmt"/>
+        <line num="173" count="8" type="stmt"/>
+        <line num="174" count="8" type="stmt"/>
+        <line num="176" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="177" count="1" type="stmt"/>
+        <line num="183" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="184" count="1" type="stmt"/>
+        <line num="190" count="6" type="stmt"/>
+        <line num="194" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="195" count="1" type="stmt"/>
+        <line num="201" count="4" type="stmt"/>
+        <line num="202" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="203" count="2" type="stmt"/>
+        <line num="209" count="2" type="stmt"/>
+        <line num="210" count="2" type="stmt"/>
+        <line num="212" count="2" type="stmt"/>
+        <line num="217" count="2" type="stmt"/>
+        <line num="219" count="1" type="stmt"/>
+        <line num="220" count="1" type="stmt"/>
+        <line num="227" count="2" type="stmt"/>
       </file>
     </package>
   </project>

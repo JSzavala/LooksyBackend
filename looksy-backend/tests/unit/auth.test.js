@@ -107,5 +107,14 @@ describe('Auth - Unit Tests', () => {
 
       expect(res.status).toBe(401)
     })
+
+    it('debe manejar errores internos del servidor en login', async () => {
+      prisma.usuario.findUnique.mockRejectedValue(new Error('DB error'))
+
+      const res = await request(app).post('/api/auth/login').send(creds)
+
+      expect(res.status).toBe(500)
+      expect(res.body.error).toBe('Error interno del servidor')
+    })
   })
 })
